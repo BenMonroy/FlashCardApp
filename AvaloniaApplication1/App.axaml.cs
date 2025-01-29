@@ -33,6 +33,9 @@ public partial class App : Application
         collection.AddTransient<SettingsViewModel>();
         collection.AddTransient<PracticeViewModel>();
         collection.AddTransient<DashboardViewModel>();
+        
+        // Add DeckRepository
+        collection.AddSingleton<DeckRepository>();
 
         collection.AddSingleton<Func<PageNames, PageViewModel>>(x => name => name switch
         {

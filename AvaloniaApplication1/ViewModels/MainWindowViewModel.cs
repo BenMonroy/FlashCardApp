@@ -17,16 +17,19 @@ public partial class MainWindowViewModel : ObservableObject
     public bool PracticeIsActive => ActivePage.PageName == PageNames.Practice;
     public bool DecksIsActive => ActivePage.PageName == PageNames.Decks;
     
-    [RelayCommand] private void GoToDashboard() => _pageFactory.GetPageViewModel(pageName: PageNames.Dashboard);
-    [RelayCommand] private void GoToSettings() => _pageFactory.GetPageViewModel(pageName: PageNames.Settings);
-    [RelayCommand] private void GoToPractice() => _pageFactory.GetPageViewModel(pageName: PageNames.Practice);
-    [RelayCommand] private void GoToDecks() => _pageFactory.GetPageViewModel(pageName: PageNames.Decks);
+    // this is a generic navigate function
+   // [RelayCommand]
+   // private void Navigate(PageNames pageName) => ActivePage = _pageFactory.GetPageViewModel(pageName);
+    
+    [RelayCommand] private void GoToDashboard() => ActivePage = _pageFactory.GetPageViewModel(pageName: PageNames.Dashboard);
+    [RelayCommand] private void GoToSettings() => ActivePage = _pageFactory.GetPageViewModel(pageName: PageNames.Settings);
+    [RelayCommand] private void GoToPractice() => ActivePage = _pageFactory.GetPageViewModel(pageName: PageNames.Practice);
+    [RelayCommand] private void GoToDecks() => ActivePage = _pageFactory.GetPageViewModel(pageName: PageNames.Decks);
 
     public MainWindowViewModel(PageFactory pageFactory)
     {
         _pageFactory = pageFactory;
         GoToDashboard();
-        Console.Write("go to dashboard");
     }
     
 }

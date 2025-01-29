@@ -30,7 +30,8 @@
             </Grid>
         </Border>
         
-        <ContentControl Grid.Column="1" Content="{Binding ActivePage}"/>
+        
+        <ContentControl Grid.Column="1" Content="{Binding ActivePage}" Background="Wheat"/>
     </Grid>
 
 </Window>

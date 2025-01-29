@@ -36,8 +36,8 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/berea/RiderProjects/AvaloniaApplication1/AvaloniaApplication1/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/berea/RiderProjects/AvaloniaApplication1/AvaloniaApplication1/Views/Practice.axaml]
+[C:/Users/berea/RiderProjects/AvaloniaApplication1/AvaloniaApplication1/Views/PracticeView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/berea/RiderProjects/AvaloniaApplication1/AvaloniaApplication1/Views/Settings.axaml]
+[C:/Users/berea/RiderProjects/AvaloniaApplication1/AvaloniaApplication1/Views/SettingsView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
